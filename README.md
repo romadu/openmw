@@ -18,7 +18,7 @@ cd openmw
 mkdir build
 cd build
 cmake ../
-
+make
 ```
 OpenMW
 ======
