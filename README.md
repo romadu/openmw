@@ -1,14 +1,20 @@
 Steps to build for ArkOS
 
 ```
+# add repository
 apt install software-properties-common
 
 add-apt-repository ppa:openmw/openmw
 
+# install dependencies
 apt-get install git build-essential cmake  libopenal-dev libopenscenegraph-dev libbullet-dev libsdl2-dev  libmygui-dev libunshield-dev liblz4-dev libtinyxml-dev libqt5opengl5-dev  libboost-filesystem-dev libboost-program-options-dev libboost-iostreams-dev  libavcodec-dev libavformat-dev libavutil-dev libswscale-dev libswresample-dev libluajit-5.1-dev
-```
-For cmake error for package "Qt5Core" version 5.12, modify CMakeLists.txt:201 to use package "Qt5Core" version "5.11" because following did not upgrade qtcore to 5.12 `apt-get install qt5-default
 
+# install additional dependencies due to errors with cmake
+```
+  For cmake error for package "Qt5Core" version 5.12, modify CMakeLists.txt:201 to use package "Qt5Core" version "5.11" because following did not upgrade qtcore to 5.12 `apt-get install qt5-default
+
+
+# update osg version` (check with `osgversion`)
 ```
 apt install openscenegraph-3.4
 apt install openscenegraph-3.4-dev
