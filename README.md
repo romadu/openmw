@@ -12,6 +12,7 @@ apt-get install git build-essential cmake  libopenal-dev libopenscenegraph-dev l
 # install additional dependencies due to errors with cmake
 ```
   For cmake error for package "Qt5Core" version 5.12, modify CMakeLists.txt:201 to use package "Qt5Core" version "5.11" because following did not upgrade qtcore to 5.12 
+  
   `apt-get install qt5-default
 
 ```
