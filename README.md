@@ -10,6 +10,7 @@ apt-get install git build-essential cmake  libopenal-dev libopenscenegraph-dev l
 For cmake error for package "Qt5Core" version 5.12, modify CMakeLists.txt:201 to use package "Qt5Core" version "5.11" because following did not upgrade qtcore to 5.12 `apt-get install qt5-default
 
 ```
+apt install openscenegraph-3.4
 apt install openscenegraph-3.4-dev
 
 git clone https://gitlab.com/OpenMW/openmw
